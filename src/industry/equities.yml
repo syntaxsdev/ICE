@@ -1,0 +1,72 @@
+# NASDAQ (IXIC/QQQ)
+- ticker: IXIC
+  is_index: true
+  index_equity:
+    ticker: "QQQ"
+  leveraged_equity:
+    - ticker: "TQQQ"
+      leverage: 3
+      type: "BULL"
+    - ticker: "SQQQ"
+      leverage: 3
+      type: "BEAR"
+  outfit_set: [angels369, waring]
+
+# S&P (SPX/SPY)
+- ticker: SPX
+  is_index: true
+  index_equity:
+    ticker: "SPY"
+  leveraged_equity:
+    - ticker: "UPRO"
+      leverage: 3
+      type: "BULL"
+    - ticker: "SPXU"
+      leverage: 3
+      type: "BEAR"
+  outfit_set: [standard, angels369]
+
+# RUSSELL 2000 (RUT/IWM)
+- ticker: RUT
+  is_index: true
+  index_equity:
+    ticker: "IWM"
+  leveraged_equity:
+    - ticker: "TNA"
+      leverage: 3
+      type: "BULL"
+    - ticker: "TZA"
+      leverage: 3
+      type: "BEAR"
+  outfit_set: [standard, angels369]
+
+# TESLA
+- ticker: TSLA
+  leveraged_equity:
+    - ticker: "TSLL"
+      leverage: 1.5
+      type: "BULL"
+    - ticker: "TSLS"
+      leverage: 1
+      type: "BEAR"
+  outfit_set: [standard, tesla]
+
+# APPLE
+- ticker: AAPL
+  outfit_set: [standard, bits, waring]
+
+# NVIDIA
+- ticker: NVDA
+  outfit_set: [standard, bits, angels369]
+
+# AMD
+- ticker: AMD
+  outfit_set: [standard, bits]
+
+# MICROSOFT
+- ticker: MSFT
+  outfit_set: [standard, bits]
+
+# NETFLIX
+- ticker: NFLX
+  outfit_set: [standard, bits, angels369]

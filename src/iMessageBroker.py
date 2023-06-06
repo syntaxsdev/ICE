@@ -1,11 +1,11 @@
 import os, json, time, requests
-from .ConfigManager import ConfigManager
-from .models.iMessageModel import Attachment, AttachmentsModel, OutgoingMessageModel, RecipientModel, BodyModel
+from ConfigManager import ConfigManager
+from models.iMessageModel import Attachment, AttachmentsModel, OutgoingMessageModel, RecipientModel, BodyModel
 from typing import Optional, Union
 
 
 class iMessageBroker:
-    def __init__(self, base: ConfigManager.ConfigManager):
+    def __init__(self, base: ConfigManager):
         self.base = base
 
         # Config specifics

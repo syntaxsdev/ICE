@@ -1,0 +1,27 @@
+#Environment set up
+
+environment: 
+  mame: dev
+  port: 3003
+
+
+endpoints:
+  send_message: http://localhost:3005/message
+
+test_handles:
+  gc: "iMessage;+;chat731955237369046921"
+  pm: "+12025575969"
+
+
+alpaca:
+  api_key: PKCDE7XYY9L2U5QA8GIE
+  secret: dBhN40cxji24SclqpxAPRn9uELT368fgxuGKXoJ6
+
+
+redis:
+  host: localhost
+  port: 6379
+
+library_keys:
+  equities: "_EquitiesLibrary"
+  outfits: "_OutfitsLibrary"
